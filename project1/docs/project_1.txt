@@ -1,1 +1,1 @@
-Project 1 description will be here soon
+Project 1 is all about algorithm performance, specifically on four sorting algorithms. The algorithms are the Merge sort, Quick sort, Heap sort, and Cocktail sort.

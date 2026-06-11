@@ -215,7 +215,7 @@ public class Sorts
         return sorted;
     }
 
-    // 
+    // This method is the only one needed for the cocktail sort, it compares forwards then backwards repeating until the array is sorted.
     public void cocktailSort(int[] array)
     {
         boolean swapped = true;
