@@ -10,7 +10,9 @@ import java.util.Arrays;
 import javax.swing.*;
 
 /**
- * @author Carter Booth CS 2430, Section 501 Programming Project 1 - Spring 2026
+ * @author Carter Booth
+ * CS 2430, Section 501
+ * Programming Project 1 - Spring 2026
  * This is the main file that creates a JFrame and it's components, also causes
  * the sorts to run.
  */

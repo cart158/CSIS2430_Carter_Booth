@@ -14,18 +14,21 @@ import java.util.Arrays;
  */
 public class Sorts
 {
+
     // Cycles is used to count the comparisons.
     private int cycles;
-    
+
     // The constructor doesn't need to initialize anything.
-    public Sorts(){}
+    public Sorts()
+    {
+    }
 
     // Use this after calling a sort to get the number of comparisons.
     public int getCycles()
     {
         return cycles;
     }
-    
+
     // This starts the Merge sort and resets the cycles back to zero.
     public int[] startMerge(int[] unsorted)
     {
@@ -164,16 +167,23 @@ public class Sorts
         int left = 2 * i + 1;
         int right = 2 * i + 2;
 
-        if (left < n && array[left] > array[large])
+        if (left < n)
         {
             cycles++;
-            large = left;
+            if (array[left] > array[large])
+            {
+
+                large = left;
+            }
         }
 
-        if (right < n && array[right] > array[large])
+        if (right < n)
         {
             cycles++;
-            large = right;
+            if (array[right] > array[large])
+            {
+                large = right;
+            }
         }
 
         if (large != i)
