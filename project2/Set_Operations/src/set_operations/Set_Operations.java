@@ -4,6 +4,7 @@
  */
 package set_operations;
 
+import java.awt.Dimension;
 import java.util.Arrays;
 import java.util.Random;
 import javax.swing.*;
@@ -24,7 +25,7 @@ public class Set_Operations
     public static JPanel setPanel = new JPanel();
     public static JPanel multiPanel = new JPanel();
     public static JPanel wrap = new JPanel();
-    public static JLabel set1, set2, set3, set4, set5, set6, set7, multi1, multi2, multi3, multi4, multi5, multi6, multi7;
+    public static JLabel set1, set2, set3, set4, set5, set6, set7, set8, set9, multi1, multi2, multi3, multi4, multi5, multi6, multi7;
     
     
     // The main method creates the window and displays the output.
@@ -36,7 +37,7 @@ public class Set_Operations
         wrap.add(setPanel);
         wrap.add(multiPanel);
         frame.add(wrap);
-        frame.setSize(550, 350);
+        frame.setSize(550, 420);
         
         setPanel.setLayout(new BoxLayout(setPanel, BoxLayout.PAGE_AXIS));
         setPanel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
@@ -45,16 +46,23 @@ public class Set_Operations
         wrap.setLayout(new BoxLayout(wrap, BoxLayout.PAGE_AXIS));
         
         setPanel.add(set1 = new JLabel());
+        setPanel.add(Box.createRigidArea(new Dimension(0, 10)));
         setPanel.add(set2 = new JLabel());
         setPanel.add(set3 = new JLabel());
+        setPanel.add(Box.createRigidArea(new Dimension(0, 10)));
         setPanel.add(set4 = new JLabel());
         setPanel.add(set5 = new JLabel());
         setPanel.add(set6 = new JLabel());
         setPanel.add(set7 = new JLabel());
+        setPanel.add(Box.createRigidArea(new Dimension(0, 10)));
+        setPanel.add(set8 = new JLabel());
+        setPanel.add(set9 = new JLabel());
         
         multiPanel.add(multi1 = new JLabel());
+        multiPanel.add(Box.createRigidArea(new Dimension(0, 10)));
         multiPanel.add(multi2 = new JLabel());
         multiPanel.add(multi3 = new JLabel());
+        multiPanel.add(Box.createRigidArea(new Dimension(0, 10)));
         multiPanel.add(multi4 = new JLabel());
         multiPanel.add(multi5 = new JLabel());
         multiPanel.add(multi6 = new JLabel());
@@ -68,6 +76,8 @@ public class Set_Operations
         set5.setText("Intersect: " + Arrays.toString(intersect(Ab, Bb)));
         set6.setText("Difference: " + Arrays.toString(diff(Ab, Bb)));
         set7.setText("Symetric Difference: " + Arrays.toString(symetricDiff(Ab, Bb)));
+        set8.setText("Not A: " + Arrays.toString(not(Ab)));
+        set9.setText("Not B: " + Arrays.toString(not(Bb)));
 
         multi1.setText("Multiset (Bag) Operations");
         multi1.setFont(set1.getFont().deriveFont(18f));
