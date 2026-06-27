@@ -37,7 +37,7 @@ public class Set_Operations
         wrap.add(setPanel);
         wrap.add(multiPanel);
         frame.add(wrap);
-        frame.setSize(550, 420);
+        frame.setSize(575, 420);
         
         setPanel.setLayout(new BoxLayout(setPanel, BoxLayout.PAGE_AXIS));
         setPanel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
