@@ -293,7 +293,8 @@ public class Optimal_Selection
     }
 
     // dynamic uses a 2D array that stores the rates based on the item and capacity.
-    // It chooses to include or exclude items based on the remaining capacity.
+    // It chooses to include or exclude items based on the remaining capacity. It keeps the larger value and repeats until it finds the best rate.
+    // It also needs to backtrack at the end to get the items for the output.
     public static String dynamic(ArrayList<Experiment> list, int cap)
     {
         ArrayList<Experiment> items = new ArrayList(list);
@@ -340,6 +341,7 @@ public class Optimal_Selection
         out.append("\nTotal Weight: ");
         out.append(totalWeight);
         out.append("\n");
+        
         return out.toString();
     }
 }

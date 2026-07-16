@@ -38,4 +38,6 @@ Experiments: Yeast Fermentation, Cosmic Rays, Micrometeorites, Mice Tumors, Seed
 Total Weight: 692
 
 The Dynamic Programming method is much faster than Brute Force because it's runtime is O(n * w).
-The Brute Force has a runtime of O(2^n) which is exponential plus the time doing operations done for each subset
+The Brute Force has a runtime of O(2^n) which is exponential plus the time doing operations done for each subset.
+The Brute Force method is easier to understand at a glance because how it works is fairly straightforward, it finds the best subset (top three in my case) of items and discards the rest.
+Dynamic Programming is more complex for a few reasons such as needing to back track to get the items in the best subset.
