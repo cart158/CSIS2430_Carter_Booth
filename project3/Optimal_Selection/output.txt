@@ -1,0 +1,41 @@
+High Rate First
+Total Rate: 35
+Experiments: Solar Flares, Micrometeorites, Binary Stars, Cloud Patterns, Seed Viability, 
+Total Weight: 680
+
+Low Weight First
+Total Rate: 52
+Experiments: Seed Viability, Yeast Fermentation, Cloud Patterns, Mice Tumors, Microgravity Plant Growth, Cosmic Rays, Sun Spots, Relativity, Micrometeorites, 
+Total Weight: 654
+
+Highest Rate to Weight Ratio
+Total Rate: 52
+Experiments: Seed Viability, Yeast Fermentation, Cloud Patterns, Mice Tumors, Cosmic Rays, Relativity, Microgravity Plant Growth, Micrometeorites, Sun Spots, 
+Total Weight: 654
+
+Brute Force Top Three
+Rank #1
+Total Rate: 53
+Experiments: Cloud Patterns, Binary Stars, Relativity, Seed Viability, Mice Tumors, Micrometeorites, Cosmic Rays, Yeast Fermentation, 
+Total Weight: 692
+
+Rank #2
+Total Rate: 52
+Experiments: Cloud Patterns, Relativity, Seed Viability, Sun Spots, Mice Tumors, Microgravity Plant Growth, Micrometeorites, Cosmic Rays, Yeast Fermentation, 
+Total Weight: 654
+
+Rank #3
+Total Rate: 51
+Experiments: Cloud Patterns, Binary Stars, Relativity, Seed Viability, Mice Tumors, Microgravity Plant Growth, Micrometeorites, Yeast Fermentation, 
+Total Weight: 687
+
+Only the Brute Force method was able to get the optimal solution to the problem.
+The high rate first was the worst while the light first and highest ratio methods were close to the optimal.
+
+Dynamic Programming
+Best Rate: 53
+Experiments: Yeast Fermentation, Cosmic Rays, Micrometeorites, Mice Tumors, Seed Viability, Relativity, Binary Stars, Cloud Patterns, 
+Total Weight: 692
+
+The Dynamic Programming method is much faster than Brute Force because it's runtime is O(n * w).
+The Brute Force has a runtime of O(2^n) which is exponential plus the time doing operations done for each subset
